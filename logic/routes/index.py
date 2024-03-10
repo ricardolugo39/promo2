@@ -29,7 +29,7 @@ def landing_page():
 
             # Set the promo code for display
             promo_code = fixed_promo_code
-        return render_template('complete.html', template_folder=current_app.template_folder)
+            return render_template('complete.html', template_folder=current_app.template_folder)
     
         # Render a temporary page with a message
     return render_template('index.html', template_folder=current_app.template_folder, promo_code=promo_code, error_message=error_message)
