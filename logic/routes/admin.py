@@ -8,9 +8,10 @@ admin_bp = Blueprint('admin', __name__)
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'Hasten123456$'
 
+
 @admin_bp.route('/admin', methods=['GET', 'POST'])
 def display_admin():
-
+    print("Request Method:", request.method)
     # Check if the user is already authenticated
     if not session.get('logged_in'):
         # If not authenticated, check if the login form is submitted
@@ -25,17 +26,10 @@ def display_admin():
                 return redirect(url_for('admin.display_admin'))  # Redirect to admin page upon successful login
             else:
                 return render_template('login.html', login_error='Invalid credentials')
-         # If not authenticated and no login form submitted, render the login page
+        
+        # If not authenticated and no login form submitted, render the login page
         return render_template('login.html')
-
-
-
-    user_data = fetch_user_data()
-
-    DATABASE_PATH = 'promo.db'
-
-    
-
-    return render_template('admin.html', template_folder=current_app.template_folder, user_data=user_data)
-
-
+    else:
+        # User is already authenticated, display the admin page
+        user_data = fetch_user_data()
+        return render_template('admin.html')

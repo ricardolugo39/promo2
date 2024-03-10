@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -45,21 +45,7 @@
 	
 	<div class="container-fluid">
 	    <div class="row row-height">
-	        <div class="col-xl-4 col-lg-4 content-left">
-	            <div class="content-left-wrapper">
-					<a href="https://www.amazon.com/dp/B0CHMVWB1P" id="logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" width="45" height="45"></a>
-	                
-	                <div>
-	                    <figure><img src="{{ url_for('static', filename='img/HAS10-football-spats.png') }}" alt="" class="img" width="270" height="270"></figure>
-	                    <h2>Get 25% Off + FREE Cleat Covers!</h2>
-	                    <p>Shop our products on Amazon and claim a FREE pair! Simply share your purchase confirmation with us.</p>
-	                    
-	                    
-	                </div>
-	                <div class="copy">© 2024 HAS10</div>
-	            </div>
-	            <!-- /content-left-wrapper -->
-	        </div>
+	        
 	        <!-- /content-left -->
 	        <div class="col-xl-8 col-lg-8 content-right" id="start">
 	            <div id="wizard_container">
@@ -68,53 +54,26 @@
 	                   
 	                </div>
 	                <!-- /top-wizard -->
-					<form id="wrapped" method="post" enctype="multipart/form-data" action="{{ url_for('main_app.landing_page') }}">
+	                <form id="wrapped" method="post" enctype="multipart/form-data">
 	                    <input id="website" name="website" type="text" value="">
 	                    <!-- Leave for security protection, read docs for details -->
 	                    <div>
 	                        <div>
 								<div>
-									<h3 class="main_question">Unlock Exclusive Amazon Savings! 🌟</h3>
-									<p>🎁 Enjoy a 25% discount on our Cleat Covers – no strings attached!</p>
-									<p>👟 Plus, score a FREE pair of cleat covers if you love our products (and we're sure you will).</p>
-								</div>
-								<ol>
-									<li>
-										<h2 class="section_title">Here's How to Claim Your Rewards:</h2>
-										<ol>
-											<li>Enter your name and email in the form below to receive your unique Promo Code via email.</li><br>
-											<li>Check your inbox for the exclusive code – it should arrive within a few minutes.</li><br>
-											<li>Head to Amazon and shop for your favorite Cleat Covers.</li><br>
-											<li>At the checkout, apply your Promo Code to enjoy an instant 25% discount.</li><br>
-											<li>If you've fallen in love with our products, send us a screenshot of your Amazon purchase, and we'll send you a FREE pair of cleat covers.</li>
-										</ol>
-										
-									</li>	
-									
-									<form id="wrapped" method="post" enctype="multipart/form-data" action="{{ url_for('main_app.landing_page') }}">
-										<input id="website" name="website" type="text" value="">
-										<div>
-											<div>
-												<div class="form-group add_top_30">
-													<label for="name">First and Last Name</label>
-													<input type="text" name="name" id="name" class="form-control required";">
-												</div>
-												<div class="form-group">
-													<label for="email">Email Address</label>
-													<input type="email" name="email" id="email" class="form-control required";">
-												</div>
-												<div id="bottom-wizard">
-											
-													<button type="submit" name="process" class="submit">GET PROMO CODE</button>
-												</div>
-											</div>
-										</div>
-									</form>									
-								</ol>
-	                            
-	                        </div>
-	                        
+									<h2 class="section_title">🎉 Exciting News!</h2>
+                                    <p>Thank you for joining the HAS10 community! Your exclusive Amazon Promo Code is on its way to your email inbox. Please check your email shortly.</p>
+                                    <p>Here's what you need to do next:</p>
+                                    <ol>
+                                        <li>1. 📧 Check your email for the one containing your unique Promo Code.</li>
+                                        <li>2. 🛒 Head to Amazon and select your favorite Cleat Cover.</li>
+                                        <li>3. 💳 At checkout, enter your unique Promo Code in the designated field.</li>
+                                        <li>4. 🎉 Enjoy a 25% discount on your entire purchase!</li>
+                                        <li>5. 📸 If you love our products, send us a screenshot of your Amazon purchase confirmation for a FREE pair of Cleat Covers!</li>
+                                    </ol>
+                                    <p>Happy shopping, and welcome to the HAS10 family!</p>
 
+									
+	                        </div>
 	                    </div>
 	                    <!-- /middle-wizard -->
 	                    
