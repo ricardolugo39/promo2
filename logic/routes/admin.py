@@ -32,4 +32,4 @@ def display_admin():
     else:
         # User is already authenticated, display the admin page
         user_data = fetch_user_data()
-        return render_template('admin.html')
+        return render_template('admin.html', user_data=user_data)
